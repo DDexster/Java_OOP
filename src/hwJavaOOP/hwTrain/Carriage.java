@@ -8,7 +8,7 @@ public class Carriage {
     private boolean bulb;
 
     public Carriage(boolean bulb) {
-        this.bulb=bulb;
+        this.bulb = bulb;
     }
 
     public boolean isLightOn() {
