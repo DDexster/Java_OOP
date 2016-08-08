@@ -4,7 +4,7 @@ package hwJavaOOP.hwTrain;
  * Created by ddexster on 08.08.16.
  */
 public class TrainUtils {
-    static int findNumOfCarriages(Train train) {
+    static int findLength(Train train) {
         int numOfCarriages = 1;
 
         while (true) {

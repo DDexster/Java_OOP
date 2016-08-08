@@ -20,7 +20,7 @@ public class TrainRunner {
 
         train.lightOn();
 
-        int code = TrainUtils.findNumOfCarriages(train);
+        int code = TrainUtils.findLength(train);
 
         System.out.println("\n" + "Player: So let's just try it... (typing code)" + (train.isLength(code) ?
                 "...prrr... (door opened)... Yahoo! Bite my shiny metal ass, you doll!" : "....prkhpkhpkh... (door closed)... Damn!"));
