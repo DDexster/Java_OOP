@@ -23,7 +23,6 @@ public class Carriage {
         this.bulb = false;
     }
 
-
     @Override
     public String toString() {
         return "Carriage{" +

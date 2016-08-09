@@ -16,34 +16,34 @@ public class Train implements ITrain {
         }
     }
 
-    public int getSize() {
-        return train.size();
-    }
-
+    @Override
     public void turnLeft() {
         if (pos > 0) pos--;
         else if (pos == 0) pos = train.size() - 1;
     }
 
+    @Override
     public void turnRight() {
         if (pos < train.size() - 1) pos++;
         else pos = 0;
     }
 
+    @Override
     public void lightOn() {
         train.get(pos).setLightOn();
-
     }
 
+    @Override
     public void lightOff() {
         train.get(pos).setLightOff();
     }
 
+    @Override
     public boolean isLightOn() {
         return train.get(pos).isLightOn();
-
     }
 
+    @Override
     public boolean isLength(int expectedLength) {
         return train.size() == expectedLength;
     }
