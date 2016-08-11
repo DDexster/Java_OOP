@@ -8,11 +8,20 @@ public class FilmRunner {
 
         FilmUtils.printFilms(films);
 
-        FilmUtils.findByYear(films, 1990, 2000);
+        ArrayList<Film> findYear = FilmUtils.findByYear(films, 1990, 2000);
+        FilmUtils.printFilms(findYear);
 
-        FilmUtils.findByGenre(films, Genre.HORROR);
+        ArrayList<Film> findGenre = FilmUtils.findByGenre(films, Genre.HORROR);
+        FilmUtils.printFilms(findGenre);
 
-        FilmUtils.findByGenre(films, Genre.THRILLER);
+        ArrayList<Film> findGenre1 = FilmUtils.findByGenre(films, Genre.THRILLER);
+        FilmUtils.printFilms(findGenre1);
+
+        ArrayList<Film> sortedByYearStream = FilmUtils.findByYearStream(films, 1990, 2000);
+        FilmUtils.printFilms(sortedByYearStream);
+
+        ArrayList<Film> sortedByGenreStream = FilmUtils.findByGenreStream(films, Genre.COMEDY);
+        FilmUtils.printFilms(sortedByGenreStream);
     }
 
 }

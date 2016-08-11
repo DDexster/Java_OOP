@@ -1,6 +1,9 @@
 package hwJavaOOP.hwFilm;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class FilmUtils {
     static ArrayList<Film> constructFilms() {
@@ -41,30 +44,46 @@ public class FilmUtils {
     }
 
     static void printFilms(ArrayList<Film> films) {
-        System.out.println("Movies base^");
+        System.out.println("Movies base:");
         for (Film film : films) {
             System.out.println(film);
         }
     }
 
-    static void findByYear(ArrayList<Film> films, int startYear, int stopYear) {
+    static ArrayList<Film> findByYear(ArrayList<Film> films, int startYear, int stopYear) {
+        ArrayList<Film> find = new ArrayList<>();
         System.out.println("Movies released by " + startYear + " - " + stopYear + ":");
         for (Film film : films) {
-            if (film.getYear() > startYear && film.getYear() < stopYear) System.out.println(film);
+            if (film.getYear() > startYear && film.getYear() < stopYear) find.add(film);
         }
+        return find;
     }
 
-    static void findByYear(ArrayList<Film> films, int year) {
+    static ArrayList<Film> findByYear(ArrayList<Film> films, int year) {
+        ArrayList<Film> find = new ArrayList<>();
         System.out.println("Movies released by " + year + ":");
         for (Film film : films) {
-            if (film.getYear() == year) System.out.println(film);
+            if (film.getYear() == year) find.add(film);
         }
+        return find;
     }
 
-    static void findByGenre(ArrayList<Film> films, Genre genre) {
+    static ArrayList<Film> findByGenre(ArrayList<Film> films, Genre genre) {
+        ArrayList<Film> find = new ArrayList<>();
         System.out.println("Movies in " + genre.getGenreName() + " genre:");
         for (Film film : films) {
-            if (film.getGenre().contains(genre)) System.out.println(film);
+            if (film.getGenre().contains(genre)) find.add(film);
         }
+        return find;
+    }
+
+    static ArrayList<Film> findByYearStream(ArrayList<Film> films, int startYear, int stopYear) {
+        List<Film> sorted = films.stream().filter((f) -> f.getYear() >= startYear && f.getYear() <= stopYear).collect(Collectors.toList());
+        return (ArrayList<Film>) sorted;
+    }
+
+    static ArrayList<Film> findByGenreStream(ArrayList<Film> films, Genre genre) {
+        List<Film> sorted = films.stream().filter((f) -> f.getGenre().contains(genre)).collect(Collectors.toList());
+        return (ArrayList<Film>) sorted;
     }
 }
