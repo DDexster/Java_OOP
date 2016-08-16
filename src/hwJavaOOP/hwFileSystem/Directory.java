@@ -34,8 +34,8 @@ public class Directory extends abstractFSItem {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(super.getName()).append("\n");
-        for (FSItem item : list) {
-            sb.append("|---").append(item);
+        for (int i = 0; i < list.size(); i++) {
+            sb.append("|---").append(list.get(i));
         }
         return sb.toString();
     }

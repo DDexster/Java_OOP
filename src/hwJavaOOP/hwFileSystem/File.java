@@ -28,7 +28,7 @@ public class File extends abstractFSItem {
     }
 
     public String toString() {
-        String s=getName()+" ("+getSize()+" B)";
+        String s=getName()+" ("+getSize()+" B)\n";
         return s;
     }
 }
