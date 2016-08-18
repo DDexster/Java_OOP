@@ -117,6 +117,7 @@ public class Album extends Media {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
+        sb.append("---------------------------\n");
         sb.append("Album: \"").append(this.name).append("\"\t Year: ").append(this.year).append("\t Length: ").append(getSumLength()).append("\n");
         sb.append("Genres: ").append(getGenresString()).append("\n");
         sb.append("Songs: \n");

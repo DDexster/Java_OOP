@@ -10,7 +10,6 @@ import java.util.ArrayList;
 public class Band {
     private String name;
     private ArrayList<Genre> genres = new ArrayList<>();
-    private String bio;
     private ArrayList<Artist> artists = new ArrayList<>();
     private ArrayList<Artist> formerArtists = new ArrayList<>();
     private ArrayList<Album> discography = new ArrayList<>();
@@ -21,9 +20,8 @@ public class Band {
     public Band() {
     }
 
-    public Band(String name, String bio) {
+    public Band(String name) {
         this.name = name;
-        this.bio = bio;
     }
 
     public String getName() {
@@ -46,15 +44,6 @@ public class Band {
 
     public Band setGenres(Genre genre) {
         this.genres.add(genre);
-        return this;
-    }
-
-    public String getBio() {
-        return bio;
-    }
-
-    public Band setBio(String bio) {
-        this.bio = bio;
         return this;
     }
 
@@ -125,12 +114,13 @@ public class Band {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Band: ").append(this.getName()).append("\tGenres: ").append(genresToString()).append("\n");
-        sb.append("Band members: \n");
+        sb.append("----------------------------------------\n");
+        sb.append("Band: ").append(this.getName()).append("\nGenres: ").append(genresToString()).append("\n");
+        sb.append("\nBand members: \n");
         for (Artist artist : artists) {
-            sb.append(artist).append("\n");
+            sb.append(artist);
         }
-        sb.append("Discography: \n");
+        sb.append("\nDiscography: \n");
         for (Album album : discography) {
             sb.append(album).append("\n");
         }

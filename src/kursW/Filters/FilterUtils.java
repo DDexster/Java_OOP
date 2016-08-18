@@ -61,4 +61,18 @@ public class FilterUtils {
         return (ArrayList<Band>) result;
     }
 
+    public static ArrayList<Band> findByPrivateTask(ArrayList<Band> bands, Genre genre, char firstArtist, int year) {
+        List<Band> result = new ArrayList<>();
+        for (Band band : bands) {
+            for (Artist artist : band.getArtists()) {
+                if (artist.getName().toLowerCase().charAt(0)==firstArtist) {
+                    for (Album album : band.getDiscography()) {
+                        if (band.getGenres().contains(genre)&&album.getYear()==year) result.add(band);
+                    }
+                }
+            }
+        }
+        return (ArrayList<Band>) result;
+    }
+
 }

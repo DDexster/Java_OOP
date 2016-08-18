@@ -66,8 +66,8 @@ public class Song extends Media {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(numInAlbum).append(". ").append(name).append(" - ").append(length).append("\t")
-                .append(" Genre: ").append(genre).append('\n');
+        sb.append(numInAlbum).append(". ").append(name).append(" - ").append(length).append("\n");
+//                .append(" Genre: ").append(genre).append('\n');
         return sb.toString();
     }
 }

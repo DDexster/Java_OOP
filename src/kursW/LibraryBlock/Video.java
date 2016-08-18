@@ -60,8 +60,8 @@ public class Video extends Media {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(name).append(" - ").append(length).append("\t")
-                .append(" Genre: ").append(genre).append("\n");
+        sb.append(name).append(" - ").append(length).append("\n");
+//                .append(" Genre: ").append(genre).append("\n");
         return sb.toString();
     }
 }

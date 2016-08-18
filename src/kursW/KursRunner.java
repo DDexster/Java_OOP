@@ -1,5 +1,6 @@
 package kursW;
 
+import kursW.Enums.Genre;
 import kursW.Filters.FilterUtils;
 import kursW.LibraryBlock.Band;
 
@@ -11,7 +12,9 @@ import java.util.ArrayList;
 public class KursRunner {
     public static void main(String[] args) {
         ArrayList<Band> bands = KursUtils.getBandsBase();
-        System.out.println(bands);
+        // особое задание написать фильтр по поиску жанра, первой буквы исполнителя и года альбома
+        ArrayList<Band> resultHW = FilterUtils.findByPrivateTask(bands, Genre.PUNK, 'd', 1978);
+        System.out.println(resultHW);
     }
 
 }

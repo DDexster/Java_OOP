@@ -94,7 +94,7 @@ public class Artist extends User {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(position).append(": ")
-                .append(this.getName()).append(" ").append(this.getSecName()).append(" Age: ").append(this.getAge()).append("\n");
+                .append(this.getName()).append(" ").append(this.getSecName()).append("\t Age: ").append(this.getAge()).append("\n");
         return sb.toString();
     }
 }

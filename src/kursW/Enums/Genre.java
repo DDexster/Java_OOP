@@ -29,7 +29,11 @@ public enum Genre {
     METAL("Metal"),
     SOUNDTRACK("Soundtrack"),
     VOCAL("Vocal"),
-    POLKA("Polka");
+    POLKA("Polka"),
+    GARAGE("Garage"),
+    SKA("Ska"),
+    GOSPEL("Gospel"),
+    INSTRUMENTAL("Instrumental");
 
     private String genreName;
 
