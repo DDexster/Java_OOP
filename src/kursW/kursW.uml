@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>kursW</OriginalElement>
+  <nodes>
+    <node x="553.75" y="1385.0">kursW.LibraryBlock.Album</node>
+    <node x="1079.0" y="356.0">kursW.LibraryBlock.Media</node>
+    <node x="27.5" y="0.0">kursW.UserBlock.AUser</node>
+    <node x="191.0" y="344.5">kursW.LibraryBlock.Concert</node>
+    <node x="189.46992481203" y="1078.0">kursW.LibraryBlock.Band</node>
+    <node x="27.25" y="804.0">kursW.UserBlock.Artist</node>
+    <node x="1019.8350563909773" y="827.0">kursW.LibraryBlock.Song</node>
+    <node x="424.0" y="103.0">kursW.Genre</node>
+    <node x="727.7100563909773" y="838.5">kursW.LibraryBlock.Video</node>
+    <node x="0.0" y="367.5">kursW.UserBlock.User</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="kursW.LibraryBlock.Band" target="kursW.LibraryBlock.Concert">
+      <point x="40.14285714285711" y="-118.5" />
+      <point x="370.1127819548871" y="1058.0" />
+      <point x="377.7020676691729" y="1058.0" />
+      <point x="377.7020676691729" y="784.0" />
+      <point x="368.5" y="784.0" />
+      <point x="71.0" y="84.0" />
+    </edge>
+    <edge source="kursW.UserBlock.User" target="kursW.UserBlock.AUser">
+      <point x="0.0" y="-61.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="kursW.LibraryBlock.Band" target="kursW.UserBlock.Artist">
+      <point x="-120.42857142857144" y="-118.5" />
+      <point x="209.54135338345856" y="1058.0" />
+      <point x="66.08333333333337" y="1058.0" />
+      <point x="-77.66666666666663" y="107.0" />
+    </edge>
+    <edge source="kursW.LibraryBlock.Video" target="kursW.Genre">
+      <point x="-50.25" y="-72.5" />
+      <point x="777.9600563909773" y="784.0" />
+      <point x="820.875" y="784.0" />
+      <point x="79.375" y="325.5" />
+    </edge>
+    <edge source="kursW.LibraryBlock.Album" target="kursW.LibraryBlock.Song">
+      <point x="65.25" y="-107.0" />
+      <point x="749.5" y="1355.0" />
+      <point x="1130.3350563909773" y="1355.0" />
+      <point x="0.0" y="84.0" />
+    </edge>
+    <edge source="kursW.UserBlock.Artist" target="kursW.UserBlock.User">
+      <point x="-58.25" y="-107.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="kursW.UserBlock.Artist" target="kursW.LibraryBlock.Band">
+      <point x="0.0" y="107.0" />
+      <point x="143.75" y="1048.0" />
+      <point x="249.68421052631578" y="1048.0" />
+      <point x="-80.28571428571422" y="-118.5" />
+    </edge>
+    <edge source="kursW.LibraryBlock.Band" target="kursW.LibraryBlock.Video">
+      <point x="120.42857142857144" y="-118.5" />
+      <point x="450.39849624060145" y="1058.0" />
+      <point x="777.9600563909773" y="1058.0" />
+      <point x="-50.25" y="72.5" />
+    </edge>
+    <edge source="kursW.LibraryBlock.Album" target="kursW.LibraryBlock.Video">
+      <point x="21.75" y="-107.0" />
+      <point x="706.0" y="1345.0" />
+      <point x="878.4600563909773" y="1345.0" />
+      <point x="50.25" y="72.5" />
+    </edge>
+    <edge source="kursW.LibraryBlock.Song" target="kursW.LibraryBlock.Media">
+      <point x="55.25" y="-84.0" />
+      <point x="1185.5850563909773" y="784.0" />
+      <point x="1179.5" y="784.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="kursW.LibraryBlock.Album" target="kursW.LibraryBlock.Band">
+      <point x="-108.75" y="-107.0" />
+      <point x="575.5" y="1365.0" />
+      <point x="259.71992481203" y="1365.0" />
+      <point x="-70.25" y="118.5" />
+    </edge>
+    <edge source="kursW.LibraryBlock.Song" target="kursW.Genre">
+      <point x="-55.25" y="-84.0" />
+      <point x="1075.0850563909773" y="774.0" />
+      <point x="979.625" y="774.0" />
+      <point x="238.125" y="325.5" />
+    </edge>
+    <edge source="kursW.LibraryBlock.Album" target="kursW.LibraryBlock.Media">
+      <point x="108.75" y="-107.0" />
+      <point x="793.0" y="1365.0" />
+      <point x="1285.077067669173" y="1365.0" />
+      <point x="1285.077067669173" y="784.0" />
+      <point x="1246.5" y="784.0" />
+      <point x="67.0" y="72.5" />
+    </edge>
+    <edge source="kursW.LibraryBlock.Band" target="kursW.LibraryBlock.Album">
+      <point x="70.25" y="118.5" />
+      <point x="400.21992481203" y="1355.0" />
+      <point x="619.0" y="1355.0" />
+      <point x="-65.25" y="-107.0" />
+    </edge>
+    <edge source="kursW.LibraryBlock.Concert" target="kursW.LibraryBlock.Band">
+      <point x="0.0" y="84.0" />
+      <point x="297.5" y="784.0" />
+      <point x="327.3007518796992" y="784.0" />
+      <point x="327.3007518796992" y="1058.0" />
+      <point x="329.96992481203" y="1058.0" />
+      <point x="0.0" y="-118.5" />
+    </edge>
+    <edge source="kursW.UserBlock.Artist" target="kursW.LibraryBlock.Concert">
+      <point x="58.25" y="-107.0" />
+      <point x="202.0" y="784.0" />
+      <point x="226.5" y="784.0" />
+      <point x="-71.0" y="84.0" />
+    </edge>
+    <edge source="kursW.LibraryBlock.Video" target="kursW.LibraryBlock.Media">
+      <point x="50.25" y="-72.5" />
+      <point x="878.4600563909773" y="784.0" />
+      <point x="1112.5" y="784.0" />
+      <point x="-67.0" y="72.5" />
+    </edge>
+    <edge source="kursW.LibraryBlock.Album" target="kursW.Genre">
+      <point x="-21.75" y="-107.0" />
+      <point x="662.5" y="1335.0" />
+      <point x="702.7843045112782" y="1335.0" />
+      <point x="702.7843045112782" y="784.0" />
+      <point x="662.125" y="784.0" />
+      <point x="-79.375" y="325.5" />
+    </edge>
+    <edge source="kursW.LibraryBlock.Band" target="kursW.Genre">
+      <point x="80.28571428571433" y="-118.5" />
+      <point x="410.25563909774434" y="1048.0" />
+      <point x="563.2758458646617" y="1048.0" />
+      <point x="563.2758458646617" y="784.0" />
+      <point x="503.375" y="784.0" />
+      <point x="-238.125" y="325.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.3483631871525633" x="643.0" y="799.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
