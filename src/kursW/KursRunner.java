@@ -1,5 +1,6 @@
 package kursW;
 
+import kursW.Filters.FilterUtils;
 import kursW.LibraryBlock.Band;
 
 import java.util.ArrayList;
@@ -10,7 +11,6 @@ import java.util.ArrayList;
 public class KursRunner {
     public static void main(String[] args) {
         ArrayList<Band> bands = KursUtils.getBandsBase();
-
         System.out.println(bands);
     }
 
