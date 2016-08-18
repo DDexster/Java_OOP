@@ -1,10 +1,12 @@
 package kursW;
 
+import kursW.Enums.Genre;
+import kursW.Enums.Positions;
 import kursW.LibraryBlock.Album;
 import kursW.LibraryBlock.Band;
 import kursW.LibraryBlock.Song;
 import kursW.LibraryBlock.Video;
-import kursW.UserBlock.Artist;
+import kursW.LibraryBlock.Artist;
 
 import java.util.ArrayList;
 
@@ -14,7 +16,7 @@ import java.util.ArrayList;
 public class KursUtils {
     static ArrayList<Band> getBandsBase() {
         ArrayList<Band> bands = new ArrayList<>();
-        Album badlands = new Album("Badlands").addSongs(new Song(1, "Castle", Genre.POP, 4.38))
+        Album badlands = new Album("Badlands", 2013).addSongs(new Song(1, "Castle", Genre.POP, 4.38))
                 .addSongs(new Song(2, "Hold ME Down", Genre.INDIE, 3.24))
                 .addSongs(new Song(3, "New Americana", Genre.INDIE, 3.03))
                 .addSongs(new Song(4, "Drive", Genre.POP, 4.18))

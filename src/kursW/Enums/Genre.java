@@ -1,4 +1,4 @@
-package kursW;
+package kursW.Enums;
 
 /**
  * Created by ddexster on 16.08.16.

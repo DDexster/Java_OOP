@@ -1,8 +1,7 @@
-package kursW.UserBlock;
+package kursW.LibraryBlock;
 
-import kursW.LibraryBlock.Band;
-import kursW.LibraryBlock.Concert;
-import kursW.Positions;
+import kursW.Enums.Positions;
+import kursW.UserBlock.User;
 
 import java.util.ArrayList;
 

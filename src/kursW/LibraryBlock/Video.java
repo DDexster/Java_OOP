@@ -1,7 +1,7 @@
 package kursW.LibraryBlock;
 
 
-import kursW.Genre;
+import kursW.Enums.Genre;
 
 /**
  * Created by ddexster on 16.08.16.

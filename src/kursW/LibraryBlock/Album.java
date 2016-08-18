@@ -1,6 +1,6 @@
 package kursW.LibraryBlock;
 
-import kursW.Genre;
+import kursW.Enums.Genre;
 
 import java.util.ArrayList;
 
@@ -11,6 +11,7 @@ public class Album extends Media {
     private String name;
     private Band band;
     private ArrayList<Genre> genres = new ArrayList<>();
+    private int year;
     private double length;
     private long favCount;
     private long playCount;
@@ -20,8 +21,9 @@ public class Album extends Media {
     public Album() {
     }
 
-    public Album(String name) {
+    public Album(String name, int year) {
         this.name = name;
+        this.year = year;
     }
 
     public String getName() {
@@ -61,6 +63,15 @@ public class Album extends Media {
 
     public ArrayList<Song> getSongs() {
         return songs;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public Album setYear(int year) {
+        this.year = year;
+        return this;
     }
 
     public Album addSongs(Song song) {
@@ -106,7 +117,7 @@ public class Album extends Media {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Album: ").append(this.name).append(" Length: ").append(getSumLength()).append("\n");
+        sb.append("Album: \"").append(this.name).append("\"\t Year: ").append(this.year).append("\t Length: ").append(getSumLength()).append("\n");
         sb.append("Genres: ").append(getGenresString()).append("\n");
         sb.append("Songs: \n");
         for (Song song : songs) {

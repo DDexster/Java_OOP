@@ -1,7 +1,6 @@
 package kursW.LibraryBlock;
 
-import kursW.Genre;
-import kursW.UserBlock.Artist;
+import kursW.Enums.Genre;
 
 import java.util.ArrayList;
 
