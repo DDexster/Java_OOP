@@ -20,9 +20,7 @@ public class hwTreeSet {
     }
 
     private static void printItems(Collection<String> set) {
-        for (String s : set) {
-            System.out.println(s);
-        }
+        set.stream().forEach(s -> System.out.println(s));
     }
 
     private static TreeSet<String> sortBySet(ArrayList<String> list) {
