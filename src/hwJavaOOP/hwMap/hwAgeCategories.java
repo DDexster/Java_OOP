@@ -18,11 +18,10 @@ import java.util.TreeMap;
 public class hwAgeCategories {
     public static void main(String[] args) {
         ArrayList<Person> persons = createList();
-        TreeMap<Integer, List<Person>> map = (TreeMap) transfetToMap(persons);
+        TreeMap<Integer, List<Person>> map = (TreeMap) transferToMap(persons);
 
-        // 1. Найти всех людей подроствого возраста (от 12 до 17 лет). O(N)
-        List<Person> firstTask = findAgeRange(map, 12, 17);
-        System.out.println(firstTask);
+        // 1. Найти всех людей подроствого возраста (от 12 до 17 лет). O(log(n))
+        System.out.println(map.subMap(12, 18));
 
         // 2. Найти младшего человека, старше 18 лет. O(log(n))
         System.out.println(map.ceilingEntry(18));
@@ -32,19 +31,7 @@ public class hwAgeCategories {
 
     }
 
-    private static List<Person> findAgeRange(Map<Integer, List<Person>> map, int from, int to) {
-        List<Person> res = new ArrayList<>();
-        for (Map.Entry<Integer, List<Person>> set : map.entrySet()) {
-            if (set.getKey() >= from && set.getKey() <= to) {
-                for (Person person : set.getValue()) {
-                    res.add(person);
-                }
-            }
-        }
-        return res;
-    }
-
-    private static Map<Integer, List<Person>> transfetToMap(ArrayList<Person> persons) {
+    private static Map<Integer, List<Person>> transferToMap(ArrayList<Person> persons) {
         Map<Integer, List<Person>> map = new TreeMap<>();
         for (Person person : persons) {
             if (!map.containsKey(person.getAge())) {
@@ -65,11 +52,11 @@ public class hwAgeCategories {
         persons.add(new Person("Linda", 23));
         persons.add(new Person("Riley", 17));
         persons.add(new Person("Mike", 14));
-        persons.add(new Person("Gina", 10));
+        persons.add(new Person("Gina", 12));
         persons.add(new Person("Ivan", 17));
         persons.add(new Person("Kimberley", 14));
         persons.add(new Person("Rick", 8));
-        persons.add(new Person("Jacklin", 20));
+        persons.add(new Person("Jacklin", 19));
         persons.add(new Person("Tom", 16));
         persons.add(new Person("Lilly", 21));
         return persons;

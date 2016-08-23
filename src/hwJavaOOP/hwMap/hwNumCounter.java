@@ -17,7 +17,9 @@ public class hwNumCounter {
         HashMap<Integer, Integer> map = countNumbers(arr);
 
         printCounts(map);
+
     }
+
 
     private static void printCounts(HashMap<Integer, Integer> map) {
         for (Map.Entry<Integer, Integer> it : map.entrySet()) {

@@ -13,7 +13,7 @@ public class hwFastSort {
         System.out.println(sortedList);
     }
 
-    //Сортировка со сложностью О(2N)
+    //Сортировка со сложностью О(N*log(N))
     private static ArrayList<Integer> fastSort(int[] arr) {
         TreeMap<Integer, ArrayList<Integer>> map = new TreeMap<>();
         for (int i : arr) {
