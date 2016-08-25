@@ -5,7 +5,8 @@ package hwJavaOOP.hwFileSystem;
  */
 public abstract class abstractFSItem implements FSItem {
     private String name;
-    private int level=0;
+    private int level = 0;
+
     public abstractFSItem() {
     }
 

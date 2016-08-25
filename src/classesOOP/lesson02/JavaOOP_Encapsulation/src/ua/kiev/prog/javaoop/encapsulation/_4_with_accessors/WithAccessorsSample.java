@@ -37,7 +37,7 @@ class Person {
     }
 
     public int getAge() {
-        return (int)age;
+        return (int) age;
     }
 
     public void setAge(int age) {
@@ -50,12 +50,12 @@ class Person {
         }
     }
 
+    public double getAbsoluteAge() {
+        return age;
+    }
+
     public void setAbsoluteAge(double age) {
         checkAge(age);
         this.age = age;
-    }
-
-    public double getAbsoluteAge() {
-        return age;
     }
 }

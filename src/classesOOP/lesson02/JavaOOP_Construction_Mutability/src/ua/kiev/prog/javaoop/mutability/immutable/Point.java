@@ -2,6 +2,7 @@ package classesOOP.lesson02.JavaOOP_Construction_Mutability.src.ua.kiev.prog.jav
 
 /**
  * Immutable point
+ *
  * @author Bohdan Vanchuhov
  */
 public class Point {

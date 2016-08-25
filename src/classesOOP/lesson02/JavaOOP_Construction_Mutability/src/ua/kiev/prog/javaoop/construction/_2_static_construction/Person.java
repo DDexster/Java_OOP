@@ -13,14 +13,6 @@ public class Person {
     private String surname;
     private int age;
 
-    public static Person createByName(String name) {
-        return new Person(name, DEFAULT_NAME);
-    }
-
-    public static Person createBySurname(String surname) {
-        return new Person(DEFAULT_NAME, surname, 0);
-    }
-
     public Person(String name, String surname, int age) {
         this.name = name;
         this.surname = surname;
@@ -29,6 +21,14 @@ public class Person {
 
     public Person(String name, String surname) {
         this(name, surname, DEFAULT_AGE);
+    }
+
+    public static Person createByName(String name) {
+        return new Person(name, DEFAULT_NAME);
+    }
+
+    public static Person createBySurname(String surname) {
+        return new Person(DEFAULT_NAME, surname, 0);
     }
 
 //    public Person(String name) {

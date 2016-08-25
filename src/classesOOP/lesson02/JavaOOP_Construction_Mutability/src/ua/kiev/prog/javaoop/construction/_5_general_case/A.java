@@ -8,21 +8,11 @@ package classesOOP.lesson02.JavaOOP_Construction_Mutability.src.ua.kiev.prog.jav
 public class A {
     public static int staticX = initStaticX();
 
-    private static int initStaticX() {
-        System.out.println("INIT STATIC X");
-        return 10;
-    }
-
-    private int x = initX();
-
-    private int initX() {
-        System.out.println("Init x");
-        return 10;
-    }
-
     static {
         System.out.println("STATIC BLOCK");
     }
+
+    private int x = initX();
 
     {
         System.out.println("Init block");
@@ -35,6 +25,16 @@ public class A {
     public A(int x) {
         this();
         System.out.println("Constructor A(int)");
+    }
+
+    private static int initStaticX() {
+        System.out.println("INIT STATIC X");
+        return 10;
+    }
+
+    private int initX() {
+        System.out.println("Init x");
+        return 10;
     }
 }
 

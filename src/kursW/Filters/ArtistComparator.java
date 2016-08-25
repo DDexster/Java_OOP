@@ -33,13 +33,13 @@ public enum ArtistComparator implements Comparator<Artist> {
             return Integer.compare(o1.getAge(), o2.getAge());
         }
     },
-    POSITION{
+    POSITION {
         @Override
         public int compare(Artist o1, Artist o2) {
             return o1.getPosition().compareTo(o2.getPosition());
         }
     },
-    BAND{
+    BAND {
         @Override
         public int compare(Artist o1, Artist o2) {
             return o1.getBand().getName().compareTo(o1.getBand().getName());

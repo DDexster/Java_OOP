@@ -7,7 +7,8 @@ import java.util.List;
  */
 public final class RectangleUtils {
 
-    private RectangleUtils() {}
+    private RectangleUtils() {
+    }
 
     public static void printRectangles(List<Rectangle> rectangles) {
         for (Rectangle rectangle : rectangles) {

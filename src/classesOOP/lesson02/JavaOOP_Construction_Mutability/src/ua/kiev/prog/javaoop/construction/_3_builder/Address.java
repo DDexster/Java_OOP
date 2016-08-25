@@ -10,7 +10,8 @@ public class Address {
     private String city;
     private String street;
 
-    Address() {}
+    Address() {
+    }
 
     @Override
     public String toString() {
@@ -25,29 +26,29 @@ public class Address {
 
     //----- Setters -----
 
-    void setCountry(String country) {
-        this.country = country;
-    }
-
-    void setCity(String city) {
-        this.city = city;
-    }
-
-    void setStreet(String street) {
-        this.street = street;
-    }
-
-    //----- Getters -----
-
     public String getCountry() {
         return country;
+    }
+
+    void setCountry(String country) {
+        this.country = country;
     }
 
     public String getCity() {
         return city;
     }
 
+    //----- Getters -----
+
+    void setCity(String city) {
+        this.city = city;
+    }
+
     public String getStreet() {
         return street;
+    }
+
+    void setStreet(String street) {
+        this.street = street;
     }
 }

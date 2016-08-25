@@ -1,8 +1,6 @@
 package hwJavaOOP.hwText;
 
 
-import java.util.ArrayList;
-
 public class Word {
     private String word;
 

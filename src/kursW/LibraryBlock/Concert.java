@@ -81,7 +81,7 @@ public class Concert {
     private Date toDateFormat(String date) {
         SimpleDateFormat sdf = new SimpleDateFormat("dd.MMM.yyyy hh:mm");
         try {
-            Date date1=sdf.parse(date);
+            Date date1 = sdf.parse(date);
             return date1;
         } catch (ParseException e) {
             e.printStackTrace();

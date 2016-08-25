@@ -65,9 +65,9 @@ public class FilterUtils {
         List<Band> result = new ArrayList<>();
         for (Band band : bands) {
             for (Artist artist : band.getArtists()) {
-                if (artist.getName().toLowerCase().charAt(0)==firstArtist) {
+                if (artist.getName().toLowerCase().charAt(0) == firstArtist) {
                     for (Album album : band.getDiscography()) {
-                        if (band.getGenres().contains(genre)&&album.getYear()==year) result.add(band);
+                        if (band.getGenres().contains(genre) && album.getYear() == year) result.add(band);
                     }
                 }
             }

@@ -1,7 +1,5 @@
 package classesOOP.lesson02.familyCar;
 
-import java.awt.*;
-
 /**
  * @author Bohdan Vanchuhov
  */
@@ -23,15 +21,17 @@ class Car {
 
     private int color = BLACK;
 
+    public Car() {
+    }
+
     public static String getColorName(int color) {
         switch (color) {
             default:
-            case BLACK: return "Black";
-            case PINK: return "Pink";
+            case BLACK:
+                return "Black";
+            case PINK:
+                return "Pink";
         }
-    }
-
-    public Car() {
     }
 
     @Override

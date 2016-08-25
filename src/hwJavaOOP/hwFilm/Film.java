@@ -1,8 +1,11 @@
 package hwJavaOOP.hwFilm;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Film {
+public class Film implements Serializable {
+
+
     private String name;
     private int year;
     private ArrayList<Actor> actors = new ArrayList<>();

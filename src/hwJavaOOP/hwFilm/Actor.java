@@ -1,6 +1,10 @@
 package hwJavaOOP.hwFilm;
 
-public class Actor {
+import java.io.Serializable;
+
+public class Actor implements Serializable {
+
+
     private String name;
     private String secName;
 

@@ -59,7 +59,7 @@ public class Employee {
     }
 
     public Date getHireDate() {
-        return (Date)hireDate.clone();
+        return (Date) hireDate.clone();
     }
 
     public void setHireDate(Date hireDate) {

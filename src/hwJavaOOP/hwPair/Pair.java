@@ -1,7 +1,5 @@
 package hwJavaOOP.hwPair;
 
-import java.util.Objects;
-
 /**
  * Created by ddexster on 15.08.16.
  */

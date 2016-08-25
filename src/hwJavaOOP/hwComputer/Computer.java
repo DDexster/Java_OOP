@@ -2,11 +2,11 @@ package hwJavaOOP.hwComputer;
 
 public class Computer {
 
-    private String name;
     HDD hdd = new HDD();
     DVDRom dvdRom = new DVDRom();
     Ram ram = new Ram();
     CPU cpu = new CPU();
+    private String name;
 
     public Computer() {
     }

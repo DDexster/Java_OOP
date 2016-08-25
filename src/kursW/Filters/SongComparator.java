@@ -8,13 +8,13 @@ import java.util.Comparator;
  * Created by ddexster on 18.08.16.
  */
 public enum SongComparator implements Comparator<Song> {
-    NAME{
+    NAME {
         @Override
         public int compare(Song o1, Song o2) {
             return o1.getName().compareTo(o1.getName());
         }
     },
-    GENRE{
+    GENRE {
         @Override
         public int compare(Song o1, Song o2) {
             return o1.getGenre().compareTo(o2.getGenre());

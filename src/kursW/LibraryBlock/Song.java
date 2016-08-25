@@ -6,7 +6,7 @@ import kursW.Enums.Genre;
  * Created by ddexster on 16.08.16.
  */
 public class Song extends Media {
-   private String name;
+    private String name;
     private Genre genre;
     private double length;
     private long favCount;

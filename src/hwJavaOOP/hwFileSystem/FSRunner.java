@@ -18,6 +18,6 @@ public class FSRunner {
 //        root.add(root);
 
         System.out.println(root);
-        System.out.println("size= "+root.getSize());
+        System.out.println("size= " + root.getSize());
     }
 }

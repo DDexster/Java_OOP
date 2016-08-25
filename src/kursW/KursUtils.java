@@ -2,11 +2,7 @@ package kursW;
 
 import kursW.Enums.Genre;
 import kursW.Enums.Positions;
-import kursW.LibraryBlock.Album;
-import kursW.LibraryBlock.Band;
-import kursW.LibraryBlock.Song;
-import kursW.LibraryBlock.Video;
-import kursW.LibraryBlock.Artist;
+import kursW.LibraryBlock.*;
 
 import java.util.ArrayList;
 

@@ -1,7 +1,5 @@
 package classesOOP.lesson01;
 
-import classesOOP.lesson01.Person;
-
 /**
  * @author bvanchuhov
  */

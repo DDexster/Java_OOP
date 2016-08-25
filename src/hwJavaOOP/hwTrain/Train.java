@@ -1,6 +1,7 @@
 package hwJavaOOP.hwTrain;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by ddexster on 08.08.16.

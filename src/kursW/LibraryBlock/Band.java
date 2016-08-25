@@ -105,7 +105,7 @@ public class Band {
         getGenres();
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < this.genres.size(); i++) {
-            if (i==this.genres.size()-1) sb.append(genres.get(i)).append(".");
+            if (i == this.genres.size() - 1) sb.append(genres.get(i)).append(".");
             else sb.append(genres.get(i)).append(", ");
         }
         return sb.toString();

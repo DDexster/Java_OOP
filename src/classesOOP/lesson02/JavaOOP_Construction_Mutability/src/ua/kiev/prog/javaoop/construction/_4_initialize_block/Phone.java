@@ -15,12 +15,6 @@ public class Phone {
         number = generateNumber();
     }
 
-    private static String generateNumber() {
-        Random random = new Random();
-
-        return Integer.toString(random.nextInt(Integer.MAX_VALUE));
-    }
-
     public Phone() {
         System.out.println("Constructor Phone()");
     }
@@ -28,6 +22,12 @@ public class Phone {
     public Phone(String number) {
         System.out.println("Constructor Phone(String)");
         this.number = number;
+    }
+
+    private static String generateNumber() {
+        Random random = new Random();
+
+        return Integer.toString(random.nextInt(Integer.MAX_VALUE));
     }
 
     public String getNumber() {

@@ -8,13 +8,13 @@ import java.util.Comparator;
  * Created by ddexster on 18.08.16.
  */
 public enum VideoComparator implements Comparator<Video> {
-    AME{
+    AME {
         @Override
         public int compare(Video o1, Video o2) {
             return o1.getName().compareTo(o1.getName());
         }
     },
-    GENRE{
+    GENRE {
         @Override
         public int compare(Video o1, Video o2) {
             return o1.getGenre().compareTo(o2.getGenre());

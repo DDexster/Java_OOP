@@ -20,7 +20,7 @@ public class Artist extends User {
     private ArrayList<Concert> concerts;
 
     public Artist(String name, String secName, int age, Positions position, Band band) {
-        this.ID =count++;
+        this.ID = count++;
         this.name = name;
         this.secName = secName;
         this.age = age;

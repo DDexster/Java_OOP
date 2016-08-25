@@ -6,8 +6,13 @@ package kursW.UserBlock;
 public abstract class AUser {
     private String login;
 
-    public void login(){}
-    public void logout(){}
-    public void register(){}
+    public void login() {
+    }
+
+    public void logout() {
+    }
+
+    public void register() {
+    }
 
 }

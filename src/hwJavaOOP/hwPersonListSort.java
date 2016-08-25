@@ -10,39 +10,6 @@ import java.util.stream.Collectors;
  * Created by ddexster on 16.08.16.
  */
 public class hwPersonListSort {
-    private static class Person {
-        private String name;
-        private int age;
-        private String sex;
-
-        public Person(String name, int age, String sex) {
-            this.name = name;
-            this.age = age;
-            this.sex = sex;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public int getAge() {
-            return age;
-        }
-
-        public String getSex() {
-            return sex;
-        }
-
-        @Override
-        public String toString() {
-            return "Person{" +
-                    "name='" + name + '\'' +
-                    ", age=" + age +
-                    ", sex='" + sex + '\'' +
-                    '}';
-        }
-    }
-
     public static void main(String[] args) {
         List<Person> persons = createList();
 
@@ -104,5 +71,38 @@ public class hwPersonListSort {
         persons.add(new Person("Rodney", 18, "male"));
         persons.add(new Person("Carla", 13, "female"));
         return persons;
+    }
+
+    private static class Person {
+        private String name;
+        private int age;
+        private String sex;
+
+        public Person(String name, int age, String sex) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        public String getSex() {
+            return sex;
+        }
+
+        @Override
+        public String toString() {
+            return "Person{" +
+                    "name='" + name + '\'' +
+                    ", age=" + age +
+                    ", sex='" + sex + '\'' +
+                    '}';
+        }
     }
 }

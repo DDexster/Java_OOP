@@ -3,7 +3,7 @@ package classesOOP.lesson02.JavaOOP_Construction_Mutability.src.ua.kiev.prog.jav
 /**
  * @author Bohdan Vanchuhov
  */
-public class MutableLine implements Cloneable{
+public class MutableLine implements Cloneable {
     private MutablePoint pointA;
     private MutablePoint pointB;
 
@@ -16,12 +16,12 @@ public class MutableLine implements Cloneable{
         return pointA.clone();
     }
 
-    public MutablePoint getPointB() {
-        return pointB.clone();
-    }
-
     public void setPointA(MutablePoint pointA) {
         this.pointA = pointA;
+    }
+
+    public MutablePoint getPointB() {
+        return pointB.clone();
     }
 
     public void setPointB(MutablePoint pointB) {

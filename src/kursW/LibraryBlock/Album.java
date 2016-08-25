@@ -89,11 +89,11 @@ public class Album extends Media {
     }
 
     private String getSumLength() {
-        double sumLength= 0.0;
+        double sumLength = 0.0;
         for (Song song : songs) {
-            sumLength+=song.getLength();
+            sumLength += song.getLength();
         }
-        String temp= String.format("%.2f",sumLength);
+        String temp = String.format("%.2f", sumLength);
         return temp;
     }
 
@@ -101,7 +101,7 @@ public class Album extends Media {
         StringBuilder genresStr = new StringBuilder();
         generateGenres();
         for (int i = 0; i < this.genres.size(); i++) {
-            if (i==this.genres.size()-1) genresStr.append(this.genres.get(i)).append(".");
+            if (i == this.genres.size() - 1) genresStr.append(this.genres.get(i)).append(".");
             else genresStr.append(this.genres.get(i)).append(", ");
         }
         return genresStr.toString();
