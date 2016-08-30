@@ -31,7 +31,6 @@ public class hwFactorial {
                 }).start();
             }
         }
-
     }
 
     private static void singleThreadOutput() {
@@ -41,7 +40,6 @@ public class hwFactorial {
         }
         long stop = System.currentTimeMillis();
         System.out.println("Single threaded operation completed in " + (stop - start) + " ms");
-
     }
 
     private static void outputFactorialToFile(int n) {
