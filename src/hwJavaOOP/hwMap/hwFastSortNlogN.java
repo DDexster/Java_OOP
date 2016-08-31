@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.TreeMap;
 
-public class hwFastSort {
+public class hwFastSortNlogN {
     public static void main(String[] args) {
         int[] arr = new int[10_000];
         arr = setArray(arr);
